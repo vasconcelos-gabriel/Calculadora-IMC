@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora ICMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Calculadora IMC</h1>
+       <div id="faixa"></div>
+       <section id="nome">
+      <h3>Nome: <input type="text" name="name" id="name" class="box" /> <h3>
+       </section>
+        <h3>Altura: <input type="number" name="altura" id="altura" class="box" />
+
+        </h3>
+        
+        <h3>Peso: <input type="number" name="peso" id="peso"  class="box"  />
+
+        </h3>
+        
+       
+      <div id="res">
+        <input type="button" value="CALCULAR" id="button" onclick="resultado()">
+        <section id="resultado">
+          <p id="pp"></p>
+        </section>
+      
+
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
