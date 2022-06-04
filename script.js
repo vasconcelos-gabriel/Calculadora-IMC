@@ -8,7 +8,10 @@ function resultado(){
 
   let imc = p  /  (n  * n)
   let pp = document.getElementById('pp')
-  if(imc <= 16){
+
+  if (nome.value.length === 0 || alt.value.length === 0   || ps.value.length === 0 ){
+    window.alert('Digite todos os valores')
+  }else if(imc <= 16){
     pp.innerHTML = 
     `Olá ${nm}, </br></br>
     Seu IMC é: ${imc.toFixed(2)},  </br></br>
